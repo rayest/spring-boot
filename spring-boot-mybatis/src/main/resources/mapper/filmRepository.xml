@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mobi.rayson.film.FilmMapper">
+
+  <resultMap id="film" type="mobi.rayson.film.Film">
+  </resultMap>
+
+  <select id="isFilmExist" parameterType="java.lang.String" resultType="boolean">
+    select case when count(*) > 0
+      then 1
+           else 0 end
+    from rayson_film
+    where name = #{name}
+  </select>
+</mapper>
