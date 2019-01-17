@@ -13,4 +13,36 @@
     from rayson_film
     where name = #{name}
   </select>
+
+  <select id="selectByMultiTables">
+    SELECT
+      a.id AS aId,
+      a.code AS aCode,
+      a.name AS aName,
+      a.price AS aPrice,
+      b.branch_code AS branchCode,
+      b.branch_Name AS branchName,
+      c.id AS cId,
+      c.discount_type AS discountType,
+      c.discount AS discountPct,
+      c.card_type AS cardType,
+      CASE WHEN c.discount_type = '0'
+        THEN round(c.discount * 0.01 * a.price, 0)
+      WHEN c.discount_type = '1'
+        THEN c.fix_price END orderPrice,
+      CASE WHEN b.status IS NULL
+        THEN '-1'
+      ELSE b.status END status
+    FROM c
+      LEFT JOIN a ON c.route_id = a.id
+      LEFT JOIN b ON b.branch_code = a.branch_code
+      LEFT JOIN (SELECT
+                   id,
+                   status
+                 FROM d
+                 WHERE status = '0'
+                 GROUP BY id) AS e ON
+                                     e.id = c.id
+    WHERE 1 = 1
+  </select>
 </mapper>
