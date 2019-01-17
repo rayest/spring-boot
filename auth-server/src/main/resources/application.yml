@@ -1,0 +1,24 @@
+server:
+  port: 8421
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework: DEBUG
+
+security:
+  oauth2:
+    resource:
+      #https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-1.5-Release-Notes#oauth-2-resource-filter
+      filter-order: 3
+
+
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/spring_boot?useSSL=false
+      username: root
+      password: 199011081108
+  redis:
+    host: 127.0.0.1
+    password: redis123
