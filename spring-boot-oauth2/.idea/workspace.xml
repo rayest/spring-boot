@@ -46,6 +46,7 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
+<<<<<<< HEAD
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-14">
               <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
@@ -61,6 +62,11 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
             </state>
           </provider>
         </entry>
@@ -153,24 +159,19 @@
           <value>
             <list>
               <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the components produced by root project 'spring-boot-oauth2'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the sub-projects of root project 'spring-boot-oauth2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the dependent components of components in root project 'spring-boot-oauth2'. [incubating]" />
@@ -183,89 +184,14 @@
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="bootJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'spring-boot-oauth2'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'spring-boot-oauth2'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="init" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs this project as a Spring Boot application." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="bootRun" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the insight into a specific dependency in root project 'spring-boot-oauth2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
+                <option name="description" value="Generates Gradle wrapper files." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestJava" />
+                <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in root project 'spring-boot-oauth2'." />
@@ -273,34 +199,24 @@
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
+                <option name="description" value="Displays the configuration model of root project 'spring-boot-oauth2'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="install" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
+                <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'spring-boot-oauth2'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'spring-boot-oauth2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
               </ExternalTaskPojo>
             </list>
           </value>
@@ -320,7 +236,11 @@
         <entry key="$PROJECT_DIR$/../../../demo/ant" value="1514217611000" />
         <entry key="$PROJECT_DIR$/../../../earn/ant-science" value="3025908343000" />
         <entry key="$PROJECT_DIR$/../../../earn/peini" value="1512740013000" />
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$" value="3095603461000" />
+=======
+        <entry key="$PROJECT_DIR$" value="1547705625000" />
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="1885105958" />
         <entry key="$PROJECT_DIR$/../../../project/Yi/thiki-kanban-backend" value="2982064997000" />
@@ -345,22 +265,6 @@
                   <entry key="$PROJECT_DIR$">
                     <value>
                       <ExternalModuleBuildClasspathPojo>
-                        <option name="entries">
-                          <list>
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.3.RELEASE/3d37f03f22a82bf2255d9d94b0e66df4f7a12b59/spring-boot-gradle-plugin-2.0.3.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.0.3.RELEASE/27c8cd6132784dd83e8c84ad14b603a08ed317e2/spring-boot-gradle-plugin-2.0.3.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.3.RELEASE/e71f594828551517334c56c68b26b7a477885ad7/spring-boot-loader-tools-2.0.3.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.0.3.RELEASE/25d1d37146bce7cc585425f635601a2ba00c0200/spring-boot-loader-tools-2.0.3.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.5.RELEASE/e9f2761e13da4228793ee5fcaa983889e68c4c61/dependency-management-plugin-1.0.5.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.5.RELEASE/3589987a66349bdc10b18c6c4a5463ffd084c908/dependency-management-plugin-1.0.5.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/43a23e357fa7b187c261520914c0b001ea1a62a2/commons-compress-1.14-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.14/7b18320d668ab080758bf5383d6d8fcf750babce/commons-compress-1.14.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.7.RELEASE/8569ed2541916982f4c11ef90ca9c1ed5ba1b142/spring-core-5.0.7.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.7.RELEASE/54b731178d81e66eca9623df772ff32718208137/spring-core-5.0.7.RELEASE.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.7.RELEASE/85c993272752ea7229cf44aa07c278a22b92420e/spring-jcl-5.0.7.RELEASE-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.7.RELEASE/699016ddf454c2c167d9f84ae5777eccadf54728/spring-jcl-5.0.7.RELEASE.jar" />
-                          </list>
-                        </option>
                         <option name="path" value="$PROJECT_DIR$" />
                       </ExternalModuleBuildClasspathPojo>
                     </value>
@@ -542,10 +446,13 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/README.md" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/configuration/OAuth2ServerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/configuration/ResourceServerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/configuration/AuthorizationServerConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/filmRepository.xml" />
+=======
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -571,8 +478,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -580,16 +492,23 @@
               <item name="spring-boot-oauth2" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-oauth2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+<<<<<<< HEAD
             <path>
               <item name="spring-boot-oauth2" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-oauth2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name=".gradle" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="AndroidView" />
+=======
+      <pane id="Scope" />
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -725,17 +644,27 @@
       <workItem from="1547697057489" duration="1160000" />
       <workItem from="1547705696941" duration="9037000" />
       <workItem from="1547732849275" duration="233000" />
+<<<<<<< HEAD
       <workItem from="1547801594486" duration="313000" />
       <workItem from="1547801917716" duration="1701000" />
+=======
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="12444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1463" y="-901" width="1817" height="834" extended-state="0" />
     <editor active="true" />
+=======
+    <option name="totallyTimeSpent" value="10430000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
@@ -754,27 +683,37 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32913166" />
+=======
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run Dashboard" weight="0.39355743" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42359552" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.69984686" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49919224" visible="true" weight="0.48039216" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21183099" />
       <window_info anchor="right" id="Bean Validation" order="3" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49919224" visible="true" weight="0.6296296" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36752826" />
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.3901454" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.69984686" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32921347" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
     </layout>
@@ -786,6 +725,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -811,6 +751,13 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/filmRepository.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/film/FilmService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/film/FilmMapper.java" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/filmRepository.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/film/FilmService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/film/FilmMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/film/Film.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/filmRepository.xml" />
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.6.RELEASE/770ec2d4130de96a496b28aa4df34dc63b90dde6/spring-security-core-5.0.6.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -825,6 +772,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/gradlew" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.6.RELEASE/333233b50e69128b8ba56c39e1e6698276954bf0/spring-security-config-5.0.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -932,6 +880,28 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/Application.java" />
+    <entry file="file://$PROJECT_DIR$/gradlew" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.6.RELEASE/333233b50e69128b8ba56c39e1e6698276954bf0/spring-security-config-5.0.6.RELEASE-sources.jar!/org/springframework/security/config/annotation/web/configurers/ExpressionUrlAuthorizationConfigurer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="392" column="42" selection-start-line="392" selection-start-column="42" selection-end-line="392" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/film/TestEndpoints.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/configuration/OAuth2ServerConfig.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/configuration/SecurityConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+>>>>>>> 872c35bd49ca7bdccd93cb368f73534679024fc6
         </state>
       </provider>
     </entry>
