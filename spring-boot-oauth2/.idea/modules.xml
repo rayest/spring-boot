@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-oauth2.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-oauth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-oauth2_main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-oauth2_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-oauth2_main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-oauth2_main~1.iml" group="spring-boot-oauth2" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-oauth2_test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-oauth2_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-oauth2_test~1.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-oauth2_test~1.iml" group="spring-boot-oauth2" />
     </modules>
   </component>
 </project>
