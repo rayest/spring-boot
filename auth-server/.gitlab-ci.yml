@@ -1,0 +1,34 @@
+image: gradle:4.7
+
+variables:
+  IMAGE_TAG:
+
+stages:
+  - buildJar
+  - buildImage
+
+build-server-jar:
+  image: gradle:4.7
+  stage: buildJar
+  only:
+    - tags
+    - branches
+    - schedules
+  script:
+    - gradle --no-daemon movejar
+  artifacts:
+    expire_in: 1 day
+    paths:
+       - ./*.jar
+
+build-server-image:
+  image: docker:latest
+  stage: buildImage
+  only:
+    - tags
+    - branches
+    - schedules
+  script:
+    - docker login -u gitlab-ci-token -p $CI_PWD $CI_REG
+    - docker build -t $IMAGE_TAG .
+    - docker push $IMAGE_TAG
