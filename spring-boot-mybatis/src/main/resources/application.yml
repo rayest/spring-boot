@@ -4,6 +4,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/rayson?useSSL=false
     username: root
     password: 199011081108
+    type: com.zaxxer.hikari.HikariDataSource
 server:
   port: 1000
 mybatis:
