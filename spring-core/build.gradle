@@ -1,0 +1,37 @@
+buildscript {
+  ext {
+    springBootVersion = '2.0.3.RELEASE'
+  }
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+  }
+}
+
+group 'mobi.rayson'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'org.springframework.boot'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile "mysql:mysql-connector-java:5.1.39"
+  compile "org.springframework.boot:spring-boot-starter:${springBootVersion}"
+  compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+  compile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+  compile "org.springframework.boot:spring-boot-starter-amqp:${springBootVersion}"
+  compileOnly "org.projectlombok:lombok:1.18.2"
+  compile "org.apache.commons:commons-lang3:3.1"
+  compile "com.alibaba:fastjson:1.2.22"
+  compile "org.springframework.boot:spring-boot-starter-aop:${springBootVersion}"
+}
