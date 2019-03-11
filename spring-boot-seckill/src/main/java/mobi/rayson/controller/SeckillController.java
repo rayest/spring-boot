@@ -36,4 +36,18 @@ public class SeckillController {
     seckillService.seckillTwo(seckillId);
     return ResponseEntity.ok().build();
   }
+
+  @ApiOperation("秒杀三。对 MySQL 使用悲观锁")
+  @PostMapping("/seckill/three/{seckillId}")
+  public ResponseEntity seckillThree(@PathVariable long seckillId) {
+    seckillService.seckillThree(seckillId);
+    return ResponseEntity.ok().build();
+  }
+
+  @ApiOperation("秒杀四。对 MySQL 使用乐观锁")
+  @PostMapping("/seckill/four/{seckillId}")
+  public ResponseEntity seckillFour(@PathVariable long seckillId) {
+    seckillService.seckillFour(seckillId);
+    return ResponseEntity.ok().build();
+  }
 }

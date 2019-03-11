@@ -3,15 +3,40 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mobi.rayson.mapper.SeckillMapper">
 
+  <resultMap id="seckill" type="mobi.rayson.model.Seckill">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="seckill_id" jdbcType="INTEGER" property="seckillId" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="number" jdbcType="INTEGER" property="number" />
+
+  </resultMap>
+
   <select id="countLeft" parameterType="java.lang.Long" resultType="java.lang.Long">
     select number
     from seckill
     where seckill_id = #{seckillId}
   </select>
 
+  <select id="selectNumberWithPessimisticLock" parameterType="java.lang.Long"
+      resultType="java.lang.Long">
+    SELECT number
+    FROM seckill
+    WHERE seckill_id = #{seckillId} FOR UPDATE
+  </select>
+
+  <select id="selectBySeckillId" parameterType="java.lang.Long" resultMap="seckill">
+    select * from seckill where seckill_id = #{seckillId}
+  </select>
+
   <update id="updateNumber" parameterType="java.lang.Long">
     update seckill
     set number = number - 1
     where seckill_id = #{seckillId}
+  </update>
+
+  <update id="update">
+    UPDATE seckill
+    SET number = number - #{number, jdbcType = INTEGER}, version = version + 1
+    WHERE seckill_id = #{seckillId, jdbcType = INTEGER} AND version = #{version, jdbcType = INTEGER}
   </update>
 </mapper>
