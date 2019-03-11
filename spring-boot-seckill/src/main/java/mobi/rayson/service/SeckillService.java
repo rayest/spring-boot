@@ -4,6 +4,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import mobi.rayson.common.SeckillStatEnum;
@@ -23,6 +25,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Slf4j
 public class SeckillService {
+
+  private Lock lock = new ReentrantLock(true);
 
   private static int corePoolSize = Runtime.getRuntime().availableProcessors();
   //创建线程池  调整队列数 拒绝服务
@@ -70,6 +74,10 @@ public class SeckillService {
 
   @Transactional
   void startSeckillOne(long seckillId, long userId) throws Exception {
+    handleSeckill(seckillId, userId);
+  }
+
+  private void handleSeckill(long seckillId, long userId) throws Exception {
     // 校验库存
     long number = seckillMapper.countLeft(seckillId);
     if (number <= 0) {
@@ -85,5 +93,41 @@ public class SeckillService {
         .userId(userId)
         .build();
     successKilledMapper.save(successKilled);
+  }
+
+  public void seckillTwo(long seckillId) {
+    int seckillNum = 1000;
+    final CountDownLatch latch = new CountDownLatch(seckillNum);
+    for (int i = 0; i < seckillNum; i++) {
+      final long userId = i;
+      Runnable task = () -> {
+        startSeckillTwo(seckillId, userId);
+        latch.countDown();
+      };
+      executor.execute(task);
+    }
+
+    try {
+      latch.await();
+      long seckillCount = getSeckillCount(seckillId);
+      log.info("一共秒杀{}件商品", seckillCount);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
+  }
+
+  private void startSeckillTwo(long seckillId, long userId) {
+    try {
+      lock.lock();
+      long number = seckillMapper.countLeft(seckillId);
+      if (number <= 0) {
+        throw new Exception(SeckillStatEnum.END.getInfo());
+      }
+      handleSeckill(seckillId, userId);
+    } catch (Exception e) {
+      e.printStackTrace();
+    } finally {
+      lock.unlock();
+    }
   }
 }

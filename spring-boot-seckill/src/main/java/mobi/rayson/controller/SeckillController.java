@@ -25,8 +25,15 @@ public class SeckillController {
 
   @ApiOperation("秒杀一。可能会出现超卖")
   @PostMapping("/seckill/one/{seckillId}")
-  public ResponseEntity seckillOne(@PathVariable long seckillId){
+  public ResponseEntity seckillOne(@PathVariable long seckillId) {
     seckillService.seckillOne(seckillId);
+    return ResponseEntity.ok().build();
+  }
+
+  @ApiOperation("秒杀二。使用可重入锁:lock")
+  @PostMapping("/seckill/two/{seckillId}")
+  public ResponseEntity seckillTwo(@PathVariable long seckillId) {
+    seckillService.seckillTwo(seckillId);
     return ResponseEntity.ok().build();
   }
 }
