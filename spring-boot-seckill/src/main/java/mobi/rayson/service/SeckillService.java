@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import mobi.rayson.common.SeckillStatEnum;
 import mobi.rayson.common.aspect.ServiceLimit;
 import mobi.rayson.common.aspect.ServiceLock;
+import mobi.rayson.common.queue.SeckillQueue;
 import mobi.rayson.mapper.SeckillMapper;
 import mobi.rayson.mapper.SuccessKilledMapper;
 import mobi.rayson.model.Seckill;
@@ -77,7 +78,7 @@ public class SeckillService {
   }
 
   @Transactional
-  void startSeckillOne(long seckillId, long userId) throws Exception {
+  public void startSeckillOne(long seckillId, long userId) throws Exception {
     handleSeckill(seckillId, userId);
   }
 
@@ -123,7 +124,7 @@ public class SeckillService {
   @ApiOperation("使用可重入锁和AOP实现")
   @ServiceLock
   @Transactional
-  void startSeckillTwo(long seckillId, long userId) {
+  public void startSeckillTwo(long seckillId, long userId) {
     try {
       lock.lock();
       long number = seckillMapper.countLeft(seckillId);
@@ -164,7 +165,7 @@ public class SeckillService {
 
   @Transactional
   @ServiceLimit
-  void startSeckillThree(long seckillId, long userId) throws Exception {
+  public void startSeckillThree(long seckillId, long userId) throws Exception {
     // MySQL 的悲观锁的用法：在 select 语句后加 "FOR UPDATE"
     long number = seckillMapper.selectNumberWithPessimisticLock(seckillId);
     if (number <= 0) {
@@ -206,7 +207,7 @@ public class SeckillService {
   }
 
   @Transactional
-  private void startSeckillFour(long seckillId, long userId, int number) throws Exception {
+  void startSeckillFour(long seckillId, long userId, int number) throws Exception {
     // 剩余的数量应该要大于等于秒杀的数量
     Seckill seckill = seckillMapper.selectBySeckillId(seckillId);
     if (seckill.getNumber() < number) {
@@ -225,5 +226,35 @@ public class SeckillService {
         .userId(userId)
         .build();
     successKilledMapper.save(successKilled);
+  }
+
+  public void seckillFive(long seckillId) {
+    for (int i = 0; i < 1000; i++) {
+      final long userId = i;
+
+      Runnable task = () -> {
+        SuccessKilled kill = new SuccessKilled();
+        kill.setSeckillId(seckillId);
+        kill.setUserId(userId);
+        try {
+          Boolean flag = SeckillQueue.getMailQueue().produce(kill);
+          if (flag) {
+            log.info("用户:{} 秒杀成功", kill.getUserId());
+          } else {
+            log.info("用户:{} 秒杀失败", userId);
+          }
+        } catch (InterruptedException e) {
+          e.printStackTrace();
+        }
+      };
+      executor.execute(task);
+    }
+    try {
+      Thread.sleep(10000);
+      Long seckillCount = getSeckillCount(seckillId);
+      log.info("一共秒杀出{}件商品", seckillCount);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
   }
 }

@@ -50,4 +50,11 @@ public class SeckillController {
     seckillService.seckillFour(seckillId);
     return ResponseEntity.ok().build();
   }
+
+  @ApiOperation("秒杀五。使用队列")
+  @PostMapping("/seckill/five/{seckillId}")
+  public ResponseEntity seckillFive(@PathVariable long seckillId) {
+    seckillService.seckillFive(seckillId);
+    return ResponseEntity.ok().build();
+  }
 }
