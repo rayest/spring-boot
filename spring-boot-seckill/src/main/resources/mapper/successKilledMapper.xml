@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mobi.rayson.mapper.SuccessKilledMapper">
+
+  <resultMap id="successKilled" type="mobi.rayson.model.SuccessKilled">
+  </resultMap>
+
+  <insert id="save" parameterType="mobi.rayson.model.SuccessKilled">
+    insert into success_killed (user_id, seckill_id) values (#{userId}, #{seckillId})
+  </insert>
+
+  <select id="countBySeckillId" parameterType="java.lang.Long" resultType="java.lang.Long">
+    select count(*)
+    from success_killed
+    where seckill_id = #{seckillId}
+  </select>
+</mapper>
