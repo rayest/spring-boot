@@ -34,6 +34,13 @@ public class Person implements BeanNameAware, BeanFactoryAware, ApplicationConte
     System.out.println("set 方法被调用");
   }
 
+  @Override
+  public String toString() {
+    return "Person{" +
+        "name='" + name + '\'' +
+        '}';
+  }
+
   //自定义的初始化函数
   public void myInit() {
     System.out.println("myInit 被调用");
