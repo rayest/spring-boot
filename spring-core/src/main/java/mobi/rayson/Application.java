@@ -1,7 +1,5 @@
 package mobi.rayson;
 
-import javax.annotation.Resource;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,17 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *  Description:
  **/
 @SpringBootApplication
-public class Application implements CommandLineRunner {
-
-  @Resource
-  private UserPublisher userPublisher;
-
+public class Application {
   public static void main(String[] args) {
     SpringApplication.run(Application.class, args);
-  }
-
-  @Override
-  public void run(String... args) throws Exception {
-    userPublisher.publish("Hello Application Context!");
   }
 }

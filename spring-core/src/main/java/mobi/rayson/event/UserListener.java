@@ -1,4 +1,4 @@
-package mobi.rayson;
+package mobi.rayson.event;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.stereotype.Component;

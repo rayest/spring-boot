@@ -1,4 +1,4 @@
-package mobi.rayson;
+package mobi.rayson.event;
 
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
