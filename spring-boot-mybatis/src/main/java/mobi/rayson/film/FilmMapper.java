@@ -11,4 +11,6 @@ import org.apache.ibatis.annotations.Param;
  **/
 public interface FilmMapper {
   boolean isFilmExist(@Param("name") String name);
+
+  Film getByName(String name);
 }

@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb2fdca3-1e42-43c4-8a12-81ca7e71839d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../rabbit-server/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-core/src/main/java/mobi/rayson/rabbit/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-core/src/main/java/mobi/rayson/rabbit/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-core/src/main/java/mobi/rayson/rabbit/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-core/src/main/java/mobi/rayson/rabbit/RabbitMQConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-core/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-core/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../ant-sicence/ant-science-backend" value="3025908343000" />
+        <entry key="$PROJECT_DIR$/../../../ant-sicence/rayest/AntScienceBackend" value="1516931311000" />
+        <entry key="$PROJECT_DIR$/../../../ant-sicence/rayest/ant-science-banckend" value="3028307358000" />
+        <entry key="$PROJECT_DIR$/../../../ant-sicence/rayest/ant-science-banckend-master" value="3028307358000" />
+        <entry key="$PROJECT_DIR$/../../../ant-sicence/yuan/Ant-Science-Backend" value="1513559447000" />
+        <entry key="$PROJECT_DIR$/../../../ant-sicence/yuan/AntScienceBackend" value="1516780369000" />
+        <entry key="$PROJECT_DIR$/../../../ant-sicence/yuan/ant-science-backend" value="3028307358000" />
+        <entry key="$PROJECT_DIR$/../../../ant-sicence/yuan/backend" value="1514056098000" />
+        <entry key="$PROJECT_DIR$/../../../demo/ant" value="1514217611000" />
+        <entry key="$PROJECT_DIR$/../../../earn/ant-science" value="3025908343000" />
+        <entry key="$PROJECT_DIR$/../../../earn/peini" value="1512740013000" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3788520364" />
+        <entry key="$PROJECT_DIR$/../../../project/Yi/thiki-kanban-backend" value="2982064997000" />
+        <entry key="$PROJECT_DIR$/../../../project/thiki-kanban-backend" value="2982932291000" />
+        <entry key="$PROJECT_DIR$/../../../rayest/gradle" value="2978832604000" />
+        <entry key="$PROJECT_DIR$/../../../rayest/gradle/gradle" value="1491302754000" />
+        <entry key="$PROJECT_DIR$/../../../rayest/qiniu/java-sdk" value="4473099189000" />
+        <entry key="$PROJECT_DIR$/../../../reebook/reebook-backend" value="2982933192000" />
+        <entry key="$PROJECT_DIR$/../../../源码/spring-framework" value="3031507574000" />
+        <entry key="$PROJECT_DIR$/../../../../gradle/test" value="1488641303000" />
+        <entry key="$USER_HOME$/Downloads/thiki-kanban-backend" value="2978424638000" />
+        <entry key="$USER_HOME$/Downloads/thiki-kanban-backend-go" value="2976642260000" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Desktop/sj-bus-service" value="PREVIEW" />
+        <entry key="$USER_HOME$/Desktop/test" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/360pay-Service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/Bank-Service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/Bus-Service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/Common-Component" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/OAuth2Component" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/check-account-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/dis-forward-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/dis-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/metro-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/push-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/sj-bus-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/BackEnd/transit-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/WeChatPay-Service/wechatpay-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/back-manage/xcx-conciliation" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/citizencard/wxcc" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/account-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/app-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/auth-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/bank-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/biz-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/config-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/eureka-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/login-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/message-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/metro-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/order-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/push-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/reconciliation-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/sms-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/timed-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/transit-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/user-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/wallet-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/enjoyTravel/zuul-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/login-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/lz/app-web" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/lz/card-web" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/lz/clearing-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/lz/config-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/lz/eureka-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/lz/sms-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/lz/user-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/lz/zuul-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/metro-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/transit-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/tsm-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/app-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/config-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/device-web" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/eureka-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/order-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/pos-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/vue-web" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/yd-bus-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../LL/yi-dong/zuul-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../blockchain/hash-wallet" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../blockchain/hash-wallet-backend" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../microservices/eureka-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../concurrency" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../rayestonal" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../rayson/rayson" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../spring-boot-mybatis" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../spring-cloud" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../spring-cloud/eureka-server" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../spring-cloud/movie-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../spring-cloud/user-service" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../we-joy/wejoy" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../yijian" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/DemoEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/film/Film.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/film/FilmController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/film/FilmMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/film/EventConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/film/FilmService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/film/Main.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/UserListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/UserPublisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/event/UserEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/event/UserEventCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/BeanCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/event/UserEventRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/BeanRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/BeanConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/MyBeanPostProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/PersonRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayChannel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayTransaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayChannelService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/WeChatServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/AlipayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/WeChatPayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayChannelServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/factory/FactoryRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/ProductListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/RabbitMQConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mobi/rayson/Application.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="producer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.11614402" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/mobi/rayson" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mobi.rayson.factory" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="mobi.rayson.factory" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-core_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mobi.rayson.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mobi.rayson.Application" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <module name="spring-core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <module name="spring-core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="spring-core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <module name="spring-core" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb2fdca3-1e42-43c4-8a12-81ca7e71839d" name="Default" comment="" />
+      <created>1547801824920</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547801824920</updated>
+      <workItem from="1547801827009" duration="666000" />
+      <workItem from="1550714523535" duration="686000" />
+      <workItem from="1550715223022" duration="191000" />
+      <workItem from="1550715586955" duration="1738000" />
+      <workItem from="1551432681631" duration="5949000" />
+      <workItem from="1551525304967" duration="732000" />
+      <workItem from="1551749027255" duration="2991000" />
+      <workItem from="1552462142464" duration="6694000" />
+      <workItem from="1552555891920" duration="4155000" />
+      <workItem from="1553492041797" duration="2358000" />
+      <workItem from="1553509124845" duration="2000" />
+      <workItem from="1555638603740" duration="982000" />
+      <workItem from="1555641015163" duration="7000" />
+      <workItem from="1555642927241" duration="2241000" />
+      <workItem from="1555646017823" duration="2530000" />
+      <workItem from="1558405522008" duration="25000" />
+      <workItem from="1561442329442" duration="948000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="32895000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <layout>
+      <window_info anchor="right" id="PlantUML" order="3" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.3856305" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Statistic" order="7" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Tail" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.60465115" side_tool="true" weight="0.23329283" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43589744" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18233618" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32905984" />
+      <window_info anchor="bottom" id="CheckStyle" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.65954417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.39534885" visible="true" weight="0.19063005" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32905984" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.46601263" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.44684386" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Web" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/Person.java</url>
+          <line>77</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayService.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayChannelServiceFactory.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayChannelServiceFactory.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/AlipayServiceImpl.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/WeChatPayServiceImpl.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/1df04db0df0da0b7113ef663fa7a0c8dfddc7e36/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/annotation/ScopedProxyMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/1df04db0df0da0b7113ef663fa7a0c8dfddc7e36/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/annotation/Scope.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/config/ConfigurableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/BeanRunner.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/1df04db0df0da0b7113ef663fa7a0c8dfddc7e36/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/annotation/Bean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="218" column="18" selection-start-line="218" selection-start-column="18" selection-end-line="218" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/BeanFactoryAware.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/InitializingBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/config/BeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/8.5.31/5ade5e787bcaabb9d088d8e4b22a8edffa43a783/tomcat-embed-core-8.5.31-sources.jar!/org/apache/catalina/core/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/1df04db0df0da0b7113ef663fa7a0c8dfddc7e36/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/PersonRunner.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Enum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/javax/annotation/PostConstruct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/annotation/InitDestroyAnnotationBeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/Person.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/1df04db0df0da0b7113ef663fa7a0c8dfddc7e36/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/support/ApplicationContextAwareProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.3.RELEASE/d6cd988d6d62985cf9ac80954d9bdd5f3810160d/spring-boot-2.0.3.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.3.RELEASE/d6cd988d6d62985cf9ac80954d9bdd5f3810160d/spring-boot-2.0.3.RELEASE-sources.jar!/org/springframework/boot/web/servlet/context/ServletWebServerApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1729">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.7.RELEASE/1df04db0df0da0b7113ef663fa7a0c8dfddc7e36/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="552" selection-start-line="552" selection-end-line="552" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="763" lean-forward="true" selection-start-line="763" selection-end-line="763" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="502" selection-start-line="502" selection-end-line="502" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.7.RELEASE/253d82ddcbdb2b2452ce9df46a0c5b07401e74a1/spring-beans-5.0.7.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/event/UserEventRunner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/event/UserPublisher.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/event/UserEvent.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/event/UserListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/BeanConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/springbean/PersonPostProcessor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/AlipayServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/FactoryRunner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayChannel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayChannelService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayTransaction.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/WeChatPayServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/factory/PayChannelServiceFactory.java" />
+    <entry file="file://$PROJECT_DIR$/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/ProductListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/ProductRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/Product.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/ProductDTO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/ProductController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/ProductService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/rabbit/RabbitMQConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/mobi/rayson/Application.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1816" column="23" selection-start-line="1816" selection-start-column="23" selection-end-line="1816" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-rabbit/2.0.4.RELEASE/e81a3d1557c588adbb6eccb9fb7394c6c331e1a2/spring-rabbit-2.0.4.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.11614402" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.11614402" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.11614402" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.11614402" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>spring-boot-mybatis</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.11614402" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.11614402" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

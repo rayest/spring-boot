@@ -1,7 +1,8 @@
 package mobi.rayson.film;
 
-import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /***
  *  Created with IntelliJ IDEA.
@@ -16,7 +17,11 @@ public class FilmService {
   @Resource
   private FilmMapper filmMapper;
 
-  public boolean getByName(String name) {
+  public boolean exist(String name) {
     return filmMapper.isFilmExist(name);
+  }
+
+  public Film getByName(String name) {
+    return filmMapper.getByName(name);
   }
 }
