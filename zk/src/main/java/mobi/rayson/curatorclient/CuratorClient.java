@@ -9,12 +9,14 @@ import org.apache.zookeeper.data.Stat;
 public class CuratorClient {
     public static void main(String[] args) throws Exception {
         CuratorFramework client = buildClient();
+        String path = "/zk-curator/c1";
         client.start();
-        createNode(client, "/zk-curator/c1");
-        System.out.println(getData(client, "/zk-curator/c1"));
+        createNode(client, path);
+        System.out.println(getData(client, path));
+        deleteNode(client, path);
     }
 
-    private static CuratorFramework buildClient(){
+    public static CuratorFramework buildClient(){
         return CuratorFrameworkFactory.builder()
                 .connectString("127.0.0.1:2181")
                 .sessionTimeoutMs(5000)
