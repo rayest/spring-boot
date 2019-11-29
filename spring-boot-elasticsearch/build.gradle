@@ -26,6 +26,9 @@ repositories {
 }
 
 dependencies {
+  compile (group: 'org.elasticsearch.client', name: 'elasticsearch-rest-high-level-client', version: '7.3.2'){
+    exclude group: 'org.apache.logging.log4j', module :'log4j-api'
+  }
   compile "mysql:mysql-connector-java:5.1.39"
   compile "org.springframework.boot:spring-boot-starter:${springBootVersion}"
   compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
