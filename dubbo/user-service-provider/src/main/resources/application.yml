@@ -7,5 +7,7 @@ dubbo:
   protocol:
     name: dubbo
     port: 20880
+  monitor:
+    protocol: registry
 server:
   port: 8081
