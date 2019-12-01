@@ -1,6 +1,7 @@
 package com.rayest.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.rayest.model.Order;
 import com.rayest.model.UserAddress;
 import com.rayest.service.OrderService;
 import com.rayest.service.UserService;
@@ -17,10 +18,10 @@ public class OrderServiceImpl implements OrderService {
     @Reference
     private UserService userService;
 
-    public void initOrder(String userId) {
+    public Order getByUserId(String userId) {
         log.info("userId: {}", userId);
         // 远程调用
         List<UserAddress> userAddressList = userService.getByUserId(userId);
-        System.out.println(userAddressList);
+        return new Order().setId(1).setUserId(userId).setAddress(userAddressList.get(0));
     }
 }

@@ -1,5 +1,7 @@
 package com.rayest.service;
 
+import com.rayest.model.Order;
+
 public interface OrderService {
-    void initOrder(String userId);
+    Order getByUserId(String userId);
 }
