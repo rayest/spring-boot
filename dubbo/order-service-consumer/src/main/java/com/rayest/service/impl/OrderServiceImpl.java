@@ -4,11 +4,9 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.rayest.model.UserAddress;
 import com.rayest.service.OrderService;
 import com.rayest.service.UserService;
-import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @Slf4j
@@ -16,7 +14,7 @@ import java.util.List;
 public class OrderServiceImpl implements OrderService {
 
     // dubbo 面向接口编程。此处的 userService 可能其他服务器
-    @Resource
+    @Reference
     private UserService userService;
 
     public void initOrder(String userId) {

@@ -1,13 +1,13 @@
 package com.rayest;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.IOException;
-
+@EnableDubbo
+@SpringBootApplication
 public class Application {
-    public static void main(String[] args) throws IOException {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("provider.xml");
-        context.start();
-        System.in.read();
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
     }
 }

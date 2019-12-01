@@ -1,16 +1,13 @@
 package com.rayest;
 
-import com.rayest.service.OrderService;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.IOException;
-
+@EnableDubbo
+@SpringBootApplication
 public class Application {
-    public static void main(String[] args) throws IOException {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("consumer.xml");
-        OrderService orderService = context.getBean(OrderService.class);
-        orderService.initOrder("111111");
-        System.out.println("调用完成");
-        System.in.read();
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
     }
 }
