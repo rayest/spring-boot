@@ -1,0 +1,18 @@
+server:
+  port: 9090
+
+spring:
+  rabbitmq:
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  direct:
+    exchange: log.direct # 设置交换器名称
+    info:
+      queue: log.info # info 队列名称
+      routingKey: log.info.routing.key # info 队列路由键
+    error:
+      queue: log.error # error 队列名称
+      routingKey: log.error.routing.key # error 队列路由键
