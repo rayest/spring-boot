@@ -1,9 +1,9 @@
 package com.rayest;
 
-import com.rayest.producer.OnewayProducer;
+import com.rayest.consumer.Consumer;
 
 public class Application {
     public static void main(String[] args) throws Exception {
-        OnewayProducer.send();
+        Consumer.consumer();
     }
 }
