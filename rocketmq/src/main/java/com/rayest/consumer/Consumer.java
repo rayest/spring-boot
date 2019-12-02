@@ -15,6 +15,7 @@ public class Consumer {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("group1");
         consumer.setNamesrvAddr("127.0.0.1:9876");
         consumer.subscribe("rocket-topic1", "tag1");
+        // 并发消费
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext context) {
                 for (MessageExt messageExt : msgs) {
