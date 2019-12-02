@@ -1,4 +1,4 @@
-package com.rayest;
+package com.rayest.producer;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
