@@ -1,6 +1,6 @@
 package com.rayest;
 
-import com.rayest.provider.RabbitProvider;
+import com.rayest.springboot.provider.RabbitProvider;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;

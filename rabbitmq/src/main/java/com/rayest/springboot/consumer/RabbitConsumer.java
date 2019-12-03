@@ -1,4 +1,4 @@
-package com.rayest.consumer;
+package com.rayest.springboot.consumer;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.rayest.provider;
+package com.rayest.springboot.provider;
 
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

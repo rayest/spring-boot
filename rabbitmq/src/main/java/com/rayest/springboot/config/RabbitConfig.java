@@ -1,4 +1,4 @@
-package com.rayest.config;
+package com.rayest.springboot.config;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
