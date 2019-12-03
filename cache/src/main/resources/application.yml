@@ -1,0 +1,6 @@
+server:
+  port: 9090
+spring:
+  cache:
+    ehcache:
+      config: ehcache.xml # 如果不配置，则为默认的 /resources/ehcache.xml
