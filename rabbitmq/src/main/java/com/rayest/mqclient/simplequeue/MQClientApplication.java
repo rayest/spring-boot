@@ -1,4 +1,4 @@
-package com.rayest.mqclient;
+package com.rayest.mqclient.simplequeue;
 
 public class MQClientApplication {
     public static void main(String[] args) throws Exception {

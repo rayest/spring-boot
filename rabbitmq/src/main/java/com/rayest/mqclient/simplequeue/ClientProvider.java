@@ -1,7 +1,8 @@
-package com.rayest.mqclient;
+package com.rayest.mqclient.simplequeue;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
+import com.rayest.mqclient.ConnectionUtils;
 
 public class ClientProvider {
     private static final String QUEUE = "client-queue";
