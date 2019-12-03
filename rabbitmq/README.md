@@ -28,8 +28,11 @@
 
 * fanout
 > 不处理路由键
+> producer --> queue --> consumer
 
 * topic
+> topic 和 direct 的不同在于，消费者绑定队列和交换机 exchange 与生产者申请的交换机 exchange
+> 是通过 */# 等匹配的模式过滤的
 
 ## 简单队列
 * 一个消费者和生产者对应，不能实现多个消费者消费同一个生产者
