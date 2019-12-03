@@ -58,3 +58,7 @@
 * producer --> exchanger --> queue1 --> consumer1
 * producer --> exchanger --> queue2 --> consumer2
 * 不同的消费者消费相同的消息，进行自己的业务处理
+
+## 消息确认机制-事务
+* 在发送消息时，将消息发送放在事务中执行
+* 引入事务机制，降低了吞吐量
