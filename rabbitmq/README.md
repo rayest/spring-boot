@@ -17,6 +17,7 @@
 * routing-key: 交换机和队列之间通过路由键绑定
 * vhost: 虚拟主机。mini 版本的服务器。命名空间隔离，互补干扰。相当于数据库的 db
 * broker: 消息队列实体
+* connection --> channel: 连接 --> 信道
 
 ## exchanger：交换器
 * direct
