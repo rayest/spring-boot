@@ -34,10 +34,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!--  使用 ehcache 缓存 -->
         <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache</artifactId>
             <version>2.10.6</version>
+        </dependency>
+
+        <!-- 使用 guava 缓存 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>24.1-jre</version>
         </dependency>
 
     </dependencies>
