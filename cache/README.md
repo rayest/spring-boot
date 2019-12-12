@@ -23,6 +23,10 @@
 > 定时轮询 redis 并比较数据版本号、通过 MQ 主动通知应用服务器
 
 
-### guava 缓存
+## guava
 * 在 springboot 中的使用方法类似于ehcache，因为 springboot 作了封装(注解方式)
 * 在配置文件中，配置 guava 的配置
+
+## memcache
+> 详细在以后有时间学习
+* brew install memcache 或者 源文件安装
