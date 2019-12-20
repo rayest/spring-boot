@@ -19,4 +19,12 @@
 > 2. 在 order-service 中通过 maven 依赖引入 common-api 服务
 > 3. 启动 user-service 和 order-service
 
+4. 服务之间的关系
+
+> 1. common-api 定义接口
+> 2. order-service 通过 @Reference 注解注入 common-api 服务定义的 UserService 接口
+> 3. user-service 实现 common-api 服务定义的 UserService 接口，从而提供服务给 order-service
+
+5. 
+
 > 

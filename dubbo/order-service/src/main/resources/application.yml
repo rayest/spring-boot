@@ -1,6 +1,6 @@
 dubbo:
   application:
-    name: order-service-consumer
+    name: order-service
   registry:
     protocol: zookeeper
     address: 127.0.0.1:2181
