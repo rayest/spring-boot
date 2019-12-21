@@ -1,6 +1,8 @@
 # springboot-dubbo
 
-> Springboot 整合 dubbo 实现 RPC
+> 1. Springboot 整合 dubbo 实现 RPC
+> 2. dubbo 和 springcloud区别：
+>    1. springcloud 中服务之间调用通过 feign 实现。而 feign 调用是 HTTP 实现的，因此各个服务仍然需要提供接口API，以供其他啊服务调用。dubbo 是面向接口编程的。只有在网关 gateway 或者 bff 层需要提供接口 API，其他的服务仅需要实现作为***中间桥梁***的 common-api 接口即可，不需要单独提供API。
 
 1. 启动 zookeeper
 
@@ -44,3 +46,4 @@
 > 2. 访问：http://localhost:8081/actuator/health 
 
 > 
+
