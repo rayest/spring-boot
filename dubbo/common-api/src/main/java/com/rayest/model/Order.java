@@ -3,12 +3,10 @@ package com.rayest.model;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-import java.io.Serializable;
-
 @Data
 @Accessors(chain = true)
-public class Order implements Serializable {
+public class Order {
     private int id;
-    private String userId;
-    private UserAddress address;
+    private String orderNo;
+    private String userNo;
 }

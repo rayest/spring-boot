@@ -25,6 +25,22 @@
 > 2. order-service 通过 @Reference 注解注入 common-api 服务定义的 UserService 接口
 > 3. user-service 实现 common-api 服务定义的 UserService 接口，从而提供服务给 order-service
 
-5. 
+5. 健康检查
+
+> 1. 在 user-service 中添加依赖
+>
+> ```java
+> <dependency>
+>     <groupId>org.springframework.boot</groupId>
+>     <artifactId>spring-boot-starter-actuator</artifactId>
+> </dependency>
+> <dependency>
+>     <groupId>org.apache.dubbo</groupId>
+>     <artifactId>dubbo-spring-boot-actuator</artifactId>
+>     <version>2.7.4.1</version>
+> </dependency>
+> ```
+>
+> 2. 访问：http://localhost:8081/actuator/health 
 
 > 
