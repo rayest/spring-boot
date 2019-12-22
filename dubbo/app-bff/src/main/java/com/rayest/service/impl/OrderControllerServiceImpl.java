@@ -9,14 +9,13 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @Slf4j
 @Service
 public class OrderControllerServiceImpl implements OrderControllerService {
 
-    @Reference
+    @Reference(version = "1.0-SNAPSHOT", loadbalance = "roundrobin", actives = 10)
     private OrderService orderService;
 
     @Override
