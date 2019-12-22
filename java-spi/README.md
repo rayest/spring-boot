@@ -11,12 +11,13 @@ SPI 的本质是将接口实现类的全限定名配置在文件中，并由服�
 > Dubbo 就是通过 SPI 机制加载所有的组件。
 Dubbo 并未使用 Java 原生的 SPI 机制，而是对其进行了增强，使其能够更好的满足需求.
 基于 SPI，我们可以很容易的对 Dubbo 进行拓展。
+Dubbo SPI 按照用户的需要，加载指定的实现类
   
 * Java SPI demo
 > 1. 定义接口和接口的实现类
 > 2. 在 resources 目录下新建 META-INF/services 目录
-> 3. 创建名为接口全路径的文件 com.rayest.spi.CalculatorService
+> 3. 创建名为接口全路径的文件 com.rayest.spi.java.CalculatorService
 > 4. 文件内容为接口实现类的全路径名 
->> com.rayest.spi.impl.SubtractionServiceImpl
->> com.rayest.spi.impl.AddServiceImpl
+>> com.rayest.spi.java.impl.SubtractionServiceImpl
+>> com.rayest.spi.java.impl.AddServiceImpl
 > 5. 在测试方法中，通过 ServiceLoader.load() 方法加载接口，会初始化两个实现类

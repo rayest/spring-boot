@@ -1,0 +1,2 @@
+alipay = com.rayest.spi.dubbo.impl.AlipayServiceImpl
+wechatPay = com.rayest.spi.dubbo.impl.WechatPayServiceImpl

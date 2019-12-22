@@ -1,6 +1,6 @@
-package com.rayest.spi.impl;
+package com.rayest.spi.java.impl;
 
-import com.rayest.spi.CalculatorService;
+import com.rayest.spi.java.CalculatorService;
 
 public class SubtractionServiceImpl implements CalculatorService {
 
