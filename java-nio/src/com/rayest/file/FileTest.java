@@ -3,18 +3,38 @@ package com.rayest.file;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
 
 public class FileTest {
     public static void main(String[] args) {
-        readNIO();
+//        readNIO();
+        writeNIO();
+    }
+
+    private static void writeNIO() {
+        String pathname = "write-from-out";
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(new File(pathname));
+            FileChannel channel = fileOutputStream.getChannel();
+            int length;
+            ByteBuffer byteBuffer = Charset.forName("utf8").encode("123456789");
+            while ((length = channel.write(byteBuffer)) != 0){
+                System.out.println("写入的长度:" + length);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private static void readNIO() {
         try {
-            String pathname = "test";
+            String pathname = "read-from-here";
             FileInputStream fileInputStream = new FileInputStream(new File(pathname));
             FileChannel channel = fileInputStream.getChannel();
             int capacity = 8;
