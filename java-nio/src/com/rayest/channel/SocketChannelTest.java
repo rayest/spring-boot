@@ -21,4 +21,12 @@ public class SocketChannelTest {
         channel.close();
         assertFalse(channel.isOpen());
     }
+
+    @Test
+    public void test_non_blocking() throws IOException {
+        SocketChannel socketChannel = SocketChannel.open();
+        socketChannel.configureBlocking(false);
+
+        assertFalse(socketChannel.isBlocking());
+    }
 }
