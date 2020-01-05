@@ -4,8 +4,10 @@ import com.rayest.Note;
 import org.junit.Test;
 
 import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class BufferTest {
 
@@ -163,5 +165,68 @@ public class BufferTest {
         byteBuffer.flip();
         assertEquals('H', byteBuffer.get(0));
         assertEquals('i', byteBuffer.get(1));
+    }
+
+    @Test
+    @Note("创建缓冲区对象，并且在堆上分配私有空间以存储元素")
+    public void test_allocate() {
+        ByteBuffer byteBuffer = ByteBuffer.allocate(8);
+        assertEquals(0, byteBuffer.position());
+        assertEquals(8, byteBuffer.limit());
+        assertEquals(8, byteBuffer.capacity());
+    }
+
+    @Test
+    @Note("创建缓冲区对象，但不分配空间存储元素，通过数组实现数据存储")
+    public void test_wrap_of_common() {
+        byte[] byteArray = new byte[2];
+        ByteBuffer byteBuffer = ByteBuffer.wrap(byteArray);
+
+        byteBuffer.put((byte) 'H').put((byte) 'i');
+
+        assertEquals('H', byteArray[0]);
+        assertEquals('i', byteArray[1]);
+    }
+
+    @Test
+    @Note("CharBuffer 独有的包装操作")
+    public void test_wrap_from_char_buffer() {
+        CharBuffer charBuffer = CharBuffer.wrap("Hello world");
+        assertEquals(11, charBuffer.limit());
+        assertEquals(11, charBuffer.capacity());
+        assertEquals('H', charBuffer.get(0));
+        assertEquals('d', charBuffer.get(charBuffer.length() - 1));
+    }
+
+    @Test
+    public void test_duplicate() {
+        ByteBuffer byteBuffer = ByteBuffer.allocate(8);
+        byteBuffer.position(3).limit(6).mark().position(5);
+
+        assertEquals(5, byteBuffer.position());
+        assertEquals(6, byteBuffer.limit());
+
+        ByteBuffer duplicate = byteBuffer.duplicate();
+
+        assertEquals(5, duplicate.position());
+        assertEquals(6, duplicate.limit());
+    }
+
+    @Test
+    public void test_slice() {
+        ByteBuffer byteBuffer = ByteBuffer.allocate(8);
+        byteBuffer.position(3).limit(5);
+
+        ByteBuffer slice = byteBuffer.slice();
+
+        assertEquals(0, slice.position());
+        assertEquals(2, slice.limit());
+        assertEquals(2, slice.capacity());
+    }
+
+    @Test
+    public void test_allocate_direct() {
+        ByteBuffer byteBuffer = ByteBuffer.allocateDirect(8);
+        assertTrue(byteBuffer.isDirect());
     }
 }
