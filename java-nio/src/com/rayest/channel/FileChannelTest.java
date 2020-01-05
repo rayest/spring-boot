@@ -10,21 +10,25 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
+import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
+import java.nio.channels.FileLock;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class FileChannelTest {
     private FileChannel accessFileChannel;
     private FileChannel fileInputStreamChannel;
     private FileChannel fileOutputStreamChannel;
+    private RandomAccessFile randomAccessFile;
 
     @Before
     public void setUp() throws Exception {
         String pathname1 = "file/random-access-file";
-        RandomAccessFile accessFile = new RandomAccessFile(pathname1, "r");
-        accessFileChannel = accessFile.getChannel();
+        randomAccessFile = new RandomAccessFile(pathname1, "r");
+        accessFileChannel = randomAccessFile.getChannel();
 
         String pathname2 = "file/file-input-stream-file";
         FileInputStream fileInputStream = new FileInputStream(pathname2);
@@ -61,4 +65,29 @@ public class FileChannelTest {
         assertEquals(10, byteBuffer.position());
     }
 
+    @Test
+    @Note("Sets the file-pointer offset")
+    public void test_seek() throws IOException {
+        assertEquals(0, accessFileChannel.position());
+
+        randomAccessFile.seek(100);
+        assertEquals(100, accessFileChannel.position());
+
+        accessFileChannel.position(200);
+        assertEquals(200, accessFileChannel.position());
+    }
+
+    @Test
+    public void test_file_lock() throws IOException {
+        FileLock fileLock = fileOutputStreamChannel.lock();
+        assertFalse("默认是独占锁", fileLock.isShared());
+        assertTrue("锁是有效的", fileLock.isValid());
+        fileLock.release();
+    }
+
+    @Test
+    public void test_file_channel_map() throws IOException {
+        MappedByteBuffer mappedByteBuffer = fileInputStreamChannel.map(FileChannel.MapMode.READ_ONLY, 0, 10);
+        assertEquals(0, mappedByteBuffer.position());
+    }
 }
