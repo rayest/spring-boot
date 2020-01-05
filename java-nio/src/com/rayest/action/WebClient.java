@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
 public class WebClient {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         try {
             SocketChannel socketChannel = SocketChannel.open();
             socketChannel.connect(new InetSocketAddress("127.0.0.1", 8000));

@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class WebServer {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         try {
             ServerSocketChannel ssc = ServerSocketChannel.open();
             ssc.socket().bind(new InetSocketAddress("127.0.0.1", 8000));
@@ -33,7 +33,6 @@ public class WebServer {
 
                 while (it.hasNext()) {
                     SelectionKey key = it.next();
-                    it.remove();
 
                     if (key.isAcceptable()) {
                         // 创建新的连接，并且把连接注册到selector上，而且，
@@ -55,6 +54,7 @@ public class WebServer {
                         socketChannel.write(writeBuff);
                         key.interestOps(SelectionKey.OP_READ);
                     }
+                    it.remove();
                 }
             }
         } catch (IOException e) {
