@@ -22,3 +22,7 @@ server:
 > 1. 通过 Semaphore 信号量许可，控制接口的并发数
 > 2. 如果有可用的信号许可，则可以获取到并执行业务操作
 > 3. 如果许可已被获取完，请求的线程被加入到等待队列中，直到有被释放的许可
+> * Semaphore 原理
+>> 1. Semaphore 通过底层的 AQS 定义了信号许可量，该许可量即为 AQS 的 state 值
+>> 2. semaphore.acquire() 方法尝试获取 state，如果成功将 state 值减一
+>> 3. semaphore.release() 方法释放许可以供等待的线程获取。释放之后，state 值加一
