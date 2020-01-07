@@ -12,6 +12,10 @@ public class SemaphoreService {
     private final Semaphore permit = new Semaphore(10, true);
 
     public void getById(String filmId) {
+        if (permit.getQueueLength() > 100) {
+            log.info("当前服务器忙，请稍后再试");
+            return;
+        }
         try {
             permit.acquire();
             log.info("获得许可，剩余可用许可：{}", permit.availablePermits());
