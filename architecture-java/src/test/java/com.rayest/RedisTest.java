@@ -91,7 +91,6 @@ public class RedisTest extends BaseTest {
     @Test
     @Note("scan(): 过滤集合中的元素")
 
-    
     public void test_scan() {
         String key = "scan-key";
         stringRedisTemplate.opsForSet().add(key, "key1001", "key1002", "key2000");
