@@ -19,16 +19,21 @@ public class OrderProducer {
         for (int i = 0; i < orderList.size(); i++) {
             String body = orderList.get(i) + "";
             Message message = new Message("order-topic", "order", "i" + i, body.getBytes());
-            SendResult sendResult = producer.send(message, new MessageQueueSelector() {
-                public MessageQueue select(List<MessageQueue> mqs, Message msg, Object arg) {
-                    // 定义队列选择规则
-                    Long orderId = (Long) arg; // arg 即为业务定义的对象
-                    long index = orderId % (mqs.size()); // 订单号 % 队列大小。作为队列下标
-                    return mqs.get((int) index); // 获取队列
-                }
-            }, orderList.get(i).getOrderId()); // 即 arg
+            SendResult sendResult = producer.send(message, queueSelector(), orderList.get(i).getOrderId()); // 即 arg
             System.out.println("消息发送结果。result: "  + sendResult);
         }
         producer.shutdown();
+    }
+
+    // 自定义队列选择器，将消息发送到指定的队列上
+    private static MessageQueueSelector queueSelector() {
+        return new MessageQueueSelector() {
+            public MessageQueue select(List<MessageQueue> mqs, Message msg, Object arg) {
+                // 定义队列选择规则
+                Long orderId = (Long) arg; // arg 即为业务定义的对象
+                long index = orderId % (mqs.size()); // 订单号 % 队列大小。作为队列下标
+                return mqs.get((int) index); // 获取队列
+            }
+        };
     }
 }

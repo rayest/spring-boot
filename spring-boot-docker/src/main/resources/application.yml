@@ -1,12 +1,13 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://mysqldb/docker?useSSL=false
+#    url: jdbc:mysql://mysqldb/docker?useSSL=false
+    url: jdbc:mysql://127.0.0.1/docker?useSSL=false
     username: root
     password: 199011081108
     type: com.zaxxer.hikari.HikariDataSource
 server:
-  port: 8080
+  port: 1002
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 

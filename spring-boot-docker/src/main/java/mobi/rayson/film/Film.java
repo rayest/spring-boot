@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /***
@@ -22,7 +23,7 @@ public class Film {
   private int id;
   private String name;
   private String director;
-  private Date releaseTime;
-  private Date createDate;
-  private Date updateDate;
+  private LocalDateTime releaseTime;
+  private LocalDateTime createDate;
+  private LocalDateTime updateDate;
 }

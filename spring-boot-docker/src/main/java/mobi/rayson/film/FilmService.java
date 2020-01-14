@@ -3,6 +3,11 @@ package mobi.rayson.film;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Random;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 /***
  *  Created with IntelliJ IDEA.
@@ -14,14 +19,34 @@ import javax.annotation.Resource;
 @Service
 public class FilmService {
 
-  @Resource
-  private FilmMapper filmMapper;
+    private ConcurrentHashMap<String, Film> films = new ConcurrentHashMap<>();
 
-  public boolean exist(String name) {
-    return filmMapper.isFilmExist(name);
-  }
+    @Resource
+    private FilmMapper filmMapper;
 
-  public Film getByName(String name) {
-    return filmMapper.getByName(name);
-  }
+    public boolean exist(String name) {
+        return filmMapper.isFilmExist(name);
+    }
+
+    public Film getByName(String name) {
+        return filmMapper.getByName(name);
+    }
+
+    public Film getFromLocalCache(String name) {
+        Film film = films.get(name);
+        return film == null ? new Film() : film;
+    }
+
+    public ConcurrentHashMap<String, Film> getFilmsFromLocalCache() {
+       return this.films;
+    }
+
+    public void put(String name) {
+        Film film = new Film();
+        film.setId(new Random().nextInt());
+        film.setName(name);
+        film.setCreateDate(LocalDateTime.now());
+        film.setUpdateDate(LocalDateTime.now());
+        films.putIfAbsent(name, film);
+    }
 }
