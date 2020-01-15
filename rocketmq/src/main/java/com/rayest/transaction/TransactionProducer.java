@@ -9,22 +9,41 @@ import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.common.message.MessageExt;
 
 public class TransactionProducer {
+    public static void main(String[] args) throws Exception {
+        sendTransaction();
+    }
     public static void sendTransaction() throws Exception {
-        TransactionMQProducer producer = new TransactionMQProducer();
+        TransactionMQProducer producer = new TransactionMQProducer("trans-group");
         producer.setNamesrvAddr("127.0.0.1:9876");
 
         // 设置事务监听器
-        producer.setTransactionListener(new TransactionListener() {
+        producer.setTransactionListener(transactionListener());
+
+        producer.start();
+
+        for (int i = 0; i < 10; i++) {
+            Message message = new Message("transaction-topic", "tag3", ("Hello:" + i).getBytes());
+            TransactionSendResult result = producer.sendMessageInTransaction(message, null);
+            System.out.println("发送结果:" + result);
+            Thread.sleep(1000);
+        }
+
+    }
+
+    public static TransactionListener transactionListener() {
+        return new TransactionListener() {
 
             // 执行 MQ 的本地事务
             public LocalTransactionState executeLocalTransaction(Message msg, Object arg) {
-                if (msg.getTags().equals("tag1")){
+                System.out.println("msg: " + msg);
+                System.out.println("arg: " + arg);
+                if (msg.getTags().equals("tag1")) {
                     return LocalTransactionState.COMMIT_MESSAGE;
                 }
-                if (msg.getTags().equals("tag2")){
+                if (msg.getTags().equals("tag2")) {
                     return LocalTransactionState.ROLLBACK_MESSAGE;
                 }
-                if (msg.getTags().equals("tag3")){
+                if (msg.getTags().equals("tag3")) {
                     return LocalTransactionState.UNKNOW;
                 }
                 return LocalTransactionState.UNKNOW;
@@ -35,16 +54,6 @@ public class TransactionProducer {
                 System.out.println("消息tag：" + msg.getTags());
                 return LocalTransactionState.COMMIT_MESSAGE;
             }
-        });
-        producer.start();
-
-        for (int i = 0; i < 10; i++) {
-            Message message = new Message("transaction-topic", "tag1", ("Hello:" + i).getBytes());
-            TransactionSendResult result = producer.sendMessageInTransaction(message, null);
-            System.out.println("发送结果:" + result);
-            Thread.sleep(1000);
-        }
-        producer.shutdown();
-
+        };
     }
 }
