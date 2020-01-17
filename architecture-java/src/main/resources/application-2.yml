@@ -1,0 +1,73 @@
+# 分库分表、读写分离
+sharding:
+  jdbc:
+    datasource:
+      names: master0,master1,master0slave0,master0slave1,master1slave0,master1slave1
+      master0:
+        type: org.apache.commons.dbcp.BasicDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/master0
+        username: root
+        password: 199011081108
+      master0slave0:
+        type: org.apache.commons.dbcp.BasicDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/master0slave0
+        username: root
+        password: 199011081108
+      master0slave1:
+        type: org.apache.commons.dbcp.BasicDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/master0slave1
+        username: root
+        password: 199011081108
+      master1:
+        type: org.apache.commons.dbcp.BasicDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/master1
+        username: root
+        password: 199011081108
+      master1slave0:
+        type: org.apache.commons.dbcp.BasicDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/master1slave0
+        username: root
+        password: 199011081108
+      master1slave1:
+        type: org.apache.commons.dbcp.BasicDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/master1slave1
+        username: root
+        password: 199011081108
+
+    config:
+      sharding:
+        tables:
+          t_order:
+            actual-data-nodes: ds$->{0..1}.t_order$->{0..1}
+            table-strategy:
+              inline.sharding-column: order_id
+              inline:
+                algorithm-expression: t_order$->{order_id % 2}
+              key-generator-column-name: order_id
+          t_order_item:
+            actual-data-nodes: ds$->{0..1}.t_order_item$->{0..1}
+            inline:
+              sharding-column: order_id
+              algorithm-expression: t_order_item$->{order_id % 2}
+              key-generator-column-name: order_item_id
+        binding-tables: t_order,t_order_item
+        broadcast-tables: t_config
+
+        default-database-strategy:
+          inline:
+            sharding-column: user_id
+            algorithm-expression: master$->{user_id % 2}
+
+        master-slave-rules:
+          ds0:
+            master-data-source-name: master0
+            slave-data-source-names: master0slave0, master0slave1
+          ds1:
+            master-data-source-name: master1
+            slave-data-source-names: master1slave0, master1slave1

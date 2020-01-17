@@ -7,7 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Slf4j
-@Component
+//@Component
 public class MySimpleJob implements SimpleJob {
 
     @Override
@@ -32,6 +32,8 @@ public class MySimpleJob implements SimpleJob {
             case 2:
                 log.info("分片三处理...");
                 break;
+            default:
+                log.info("分片默认处理");
         }
     }
 }
