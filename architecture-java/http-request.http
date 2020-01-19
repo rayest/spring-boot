@@ -1,0 +1,12 @@
+### 布隆过滤器的引用实践
+###
+POST http://localhost:1001/email
+Content-Type: application/json
+
+{}
+
+###
+GET http://localhost:1001/email/e9b3fb75-68c2-4139-9224-f4b6ca566136@test.com
+
+####Accept: application/json
+
