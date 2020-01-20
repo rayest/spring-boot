@@ -10,3 +10,13 @@ GET http://localhost:1001/email/e9b3fb75-68c2-4139-9224-f4b6ca566136@test.com
 
 ####Accept: application/json
 
+### redis zset 排行中的应用
+GET http://localhost:1001/rank/weekly
+
+###
+PUT http://localhost:1001/rank/weekly
+
+###
+POST http://localhost:1001/rank/timely?username=lee
+
+###
