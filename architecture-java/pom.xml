@@ -77,11 +77,12 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.1.1</version>
         </dependency>
-        <dependency>
-            <groupId>io.shardingsphere</groupId>
-            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+<!--        当需要开启分库分表时，开启该类库依赖-->
+<!--        <dependency>-->
+<!--            <groupId>io.shardingsphere</groupId>-->
+<!--            <artifactId>sharding-jdbc-spring-boot-starter</artifactId>-->
+<!--            <version>3.0.0</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>

@@ -19,4 +19,17 @@ PUT http://localhost:1001/rank/weekly
 ###
 POST http://localhost:1001/rank/timely?username=lee
 
+### 发红包
+POST http://localhost:1001/red-package
+Content-Type: application/json
+
+{
+  "userNo": "1",
+  "totalAmount": 600,
+  "totalNumber": 3
+}
+
+### 抢红包
+GET http://localhost:1001/red-package/30/053fa689-eb64-4e88-a053-c405c12033b0
+
 ###
