@@ -32,4 +32,7 @@ Content-Type: application/json
 ### 抢红包
 GET http://localhost:1001/red-package/30/053fa689-eb64-4e88-a053-c405c12033b0
 
+### lua
+GET http://localhost:1001/lua/red-package/1/10
+
 ###

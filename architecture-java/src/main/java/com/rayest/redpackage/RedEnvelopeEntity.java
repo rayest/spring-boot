@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Accessors(chain = true)
-public class RedPackageEntity {
+public class RedEnvelopeEntity {
     private Integer id;
     private String redPackageNo;
     private String userNo;
