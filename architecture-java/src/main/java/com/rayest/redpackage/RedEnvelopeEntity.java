@@ -13,6 +13,8 @@ public class RedEnvelopeEntity {
     private String userNo;
     private Integer totalAmount;
     private int totalNumber;
+    private int version;
+    private int stock;
     private LocalDateTime createdTime;
     private LocalDateTime updatedTime;
 }

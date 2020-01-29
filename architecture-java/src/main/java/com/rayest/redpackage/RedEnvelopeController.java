@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -31,7 +32,7 @@ public class RedEnvelopeController {
         return redEnvelopeService.get(userNo, redEnvelopeNo);
     }
 
-    // ==================== Lua 测试 ====================================
+    // ==================== Lua 实现 ====================================
 
     @Resource
     private DefaultRedisScript<Boolean> redisScript;
@@ -48,5 +49,11 @@ public class RedEnvelopeController {
     @GetMapping("/lua/red-envelope/{redEnvelopeNo}/{userNo}")
     public void getWithLua(@PathVariable String redEnvelopeNo, @PathVariable String userNo) throws Exception {
         redEnvelopeService.getWithLua(redEnvelopeNo, userNo);
+    }
+
+    // ==================== 乐观锁 实现 ====================================
+    @RequestMapping("/lock/version/red-envelope/{redEnvelopeNo}/{userNo}")
+    public void getWithVersion(@PathVariable String redEnvelopeNo, @PathVariable String userNo) throws Exception {
+        redEnvelopeService.getWithVersion(redEnvelopeNo, userNo);
     }
 }

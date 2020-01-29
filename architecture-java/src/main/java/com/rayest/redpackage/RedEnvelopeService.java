@@ -158,4 +158,28 @@ public class RedEnvelopeService {
         }
     }
 
+    public void getWithVersion(String redEnvelopeNo, String userNo) throws Exception {
+        // 乐观锁通过限制时间或者次数实现，没有使用 redis 缓存
+        long start = System.currentTimeMillis();
+        while (true) {
+            long end = System.currentTimeMillis();
+            if (end - start > 100) {
+                return;
+            }
+            RedEnvelopeEntity redEnvelopeEntity = redEnvelopeMapper.selectByRedEnvelopeNo(redEnvelopeNo);
+            if (null == redEnvelopeEntity) {
+                throw new Exception("红包不存在");
+            }
+            Integer id = redEnvelopeEntity.getId();
+            if (redEnvelopeEntity.getStock() > 0) {
+                int updated = redEnvelopeMapper.decreaseStockWithVersion(id, redEnvelopeEntity.getVersion());
+                if (updated == 0) {
+                    continue;
+                }
+                redEnvelopeRecordMapper.add(new RedEnvelopeRecordEntity().setUserNo(userNo).setRedEnvelopeNo(redEnvelopeNo));
+            } else {
+                return;
+            }
+        }
+    }
 }
