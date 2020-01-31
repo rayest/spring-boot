@@ -1,0 +1,22 @@
+###
+GET localhost:9200
+
+### 创建索引、类型、文档
+PUT localhost:9200/index-test/type-test/2
+Content-Type: application/json
+
+{
+  "name": "lee",
+  "age": "200"
+}
+
+### 查看指定索引的所有映射，映射即属性字段
+GET localhost:9200/index-test/_mapping/
+
+### 查看指定索引的类型的映射
+GET localhost:9200/index-test/_mapping/type-test
+
+### 在 name 字段中索引其值为 lee 的结果
+GET localhost:9200/index-test/type-test/_search?q=lee&_source=name
+
+###
