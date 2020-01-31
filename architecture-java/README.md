@@ -77,3 +77,82 @@ server:
 > 1. redis lua 过滤限流：500万放行5000用户请求
 > 2. 商品详情通过在后台管理系统添加时，缓存到 redis
 > 3. 扣减库存时需要分布式锁：setnx 或者 redission lock 实现
+
+## Linux 线上排查问题
+
+```shell
+# 关注 CPU、内存、磁盘、网络
+
+# 查看进程
+$ jps
+# 查看所有进程 pid 的 CPU 和内存使用情况，定位到指定的进程
+$ top
+
+# 将其转换为 16 进制形式 (因为 java native 线程以 16 进制形式输出)
+$ printf '%x\n' pid   
+
+# 打印进程栈信息
+$ jstack pid
+
+# 查看当前进程 JVM 堆新生代、老年代、持久代等请情况，GC 使用的算法等信息
+$ jmap -heap pid
+
+# 输出当前进程内存中所有对象包含的大小
+$ jmap -histo:live {pid} | head -n 10 
+
+# 每5秒打印一次GC状况
+$ jstat -gc pid 5000
+
+# 查看内存 
+$ free -m
+
+# 查看当前目录所占用的磁盘
+$ du -d 1 -h 
+
+# 查看磁盘总占用
+$ df -ih
+
+# 查看磁盘IO
+$ iostat
+```
+
+## Linux 常用命令
+
+```shell
+ # find
+ # 列出当前目录及其子目录中所有一般文件
+ $ find . -type f
+ 
+ # 列出当前目录及其子目录中以 .java 的文件
+ $ find . -name "*.java"
+ 
+ # 列出当前目录及其子目录下所有最近 20 天内更新过的文件
+ $ find . -ctime -20
+ 
+ 
+ # grep
+ # 从文件中读取关键词进行搜索
+ $ cat 1.txt | grep -f 2.txt # 输出 1.txt 文件中含有从 2.txt 文件中读取出的关键词的内容行
+ 
+ # 从 1.txt 中读取含 6 的关键词
+ $ grep '6' 1.txt # 6、66
+
+ # 多个文件查找关键词 6
+ $ grep '6' 2.txt 1.txt
+ 
+ # ^ 关键词开头匹配符
+ $ cat 2.txt | grep ^6
+ 
+ # 以 i 为结尾的关键词
+ $ cat 1.txt | grep i$  # hi
+ 
+ # java 关键词
+ $ ps -ef | grep java
+ 
+ 
+ # awk
+ # 打印文件第一个关键词
+ $ cat 1.txt | awk '{print $1}' 
+ $ awk '{print $1}' 1.txt
+```
+
