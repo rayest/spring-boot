@@ -179,3 +179,12 @@ $ awk '/content/ {print}' test.log # 类似于 grep 'destroyed' test.log
 ```
 
 ## disruptor
+
+## RedLock
+> 1. Redis 实现分布式锁。可以通过 lua 脚本的 setnx 和 expire 或者在代码中一步实现
+> 2. 但是，在发生 failover 即故障转移时，可能存在 master 未及时释放锁，但是之前的
+>    slave 升级为 master 并处理获取分布式锁请求，此时会导致不同实例同时获取到了锁
+> 3. RedLock 用以解决上述所说的 Redis 分布式锁问题
+> 4. RedLock 需要多个独立、无主从关系的 master 实例，客户端需要依次向它们发起获取锁的请求
+> 5. 如果在有效时间内有过半实例响应获取锁成功，则客户端分布式锁获取成功
+> 6. 释放锁时，所有实例也依次释放锁
