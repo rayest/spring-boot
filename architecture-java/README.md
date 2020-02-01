@@ -150,9 +150,31 @@ $ iostat
  $ ps -ef | grep java
  
  
- # awk
- # 打印文件第一个关键词
+ # awk: 抽取每行的信息。awk '{pattern + action}' {filenames}
+ # $0:所有列内容；$1:第一列内容；默认空格作为分隔符
+ # 打印文件每一行第一列内容
  $ cat 1.txt | awk '{print $1}' 
  $ awk '{print $1}' 1.txt
+ 
+ # 以 : 为分隔符，打印每行第一列内容
+ $ awk -F ':' '{print $1}' 1.txt
+ 
+ # 打印 2~6 行内容
+ # NR：number of records(行记录数)； NF：number of fields(每行字段数)
+ $ awk '{if (NR >= 2 && NR <= 6) print $1}' 1.txt
+ 
+ # 统计日志中 INFO 和 ERROR 级别总数
+ $ awk '{ 
+ if ($3 == "INFO") {info_count++} 
+ if ($3 == "ERROR") {error_count++}
+ } 
+ END {
+  print NR;
+  print info_count;
+  print error_count
+} ' test.log
+
+# 打印含 content 的所有行记录
+$ awk '/content/ {print}' test.log # 类似于 grep 'destroyed' test.log
 ```
 
