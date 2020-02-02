@@ -188,3 +188,15 @@ $ awk '/content/ {print}' test.log # 类似于 grep 'destroyed' test.log
 > 4. RedLock 需要多个独立、无主从关系的 master 实例，客户端需要依次向它们发起获取锁的请求
 > 5. 如果在有效时间内有过半实例响应获取锁成功，则客户端分布式锁获取成功
 > 6. 释放锁时，所有实例也依次释放锁
+
+## rocketmq-spring-boot-starter
+> 1. 添加依赖 rocketmq-spring-boot-starter
+> 2. 启动 RocketMQ name server
+```shell
+./bin/mqnamesrv
+```
+> 3. 启动 RocketMQ Broker
+```shell 
+./bin/mqbroker -n 127.0.0.1:9876
+```
+> 4. 启动 RocketMQ external console 客户端，以方便查看
