@@ -1,3 +1,18 @@
-POST http://localhost:1001/rocketmq/producer/user/leee
+POST http://localhost:1001/rocketmq/send/user/leee
+
+###
+POST http://localhost:1001/rocketmq/syncSendOrderly/user/orderly
+
+###
+POST http://localhost:1001/rocketmq/sendOneWay/user/sendOneWay
+
+###
+POST http://localhost:1001/rocketmq/convertAndSend/user/convertAndSend
+
+###
+POST http://localhost:1001/rocketmq/asyncSend/user/asyncSend
+
+###
+POST http://localhost:1001/rocketmq/sendMessageInTransaction/user/sendMessageInTransaction
 
 ###
