@@ -2,8 +2,8 @@ package com.rayest.rocketmq.producer;
 
 import com.rayest.common.Note;
 import com.rayest.rocketmq.User;
-import com.rayest.service.RankService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
 import org.apache.rocketmq.client.producer.LocalTransactionState;
 import org.apache.rocketmq.client.producer.SendCallback;
 import org.apache.rocketmq.client.producer.SendResult;
@@ -98,4 +98,9 @@ public class ProducerService {
         };
     }
 
+    public void sendWihTag(String username) {
+        User user = new User().setUsername(username);
+        String tag = "test-tag";
+        rocketMQTemplate.asyncSend(TOPIC + ":" + tag , user, sendCallback());
+    }
 }

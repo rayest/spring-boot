@@ -11,11 +11,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-@RocketMQMessageListener(topic = "arch-test-topic", consumerGroup = "consumer-group", consumeMode = ConsumeMode.ORDERLY)
+@RocketMQMessageListener(topic = "arch-test-topic", consumerGroup = "consumer-group", consumeMode = ConsumeMode.ORDERLY, selectorExpression = "test-tag")
 public class ConsumerService implements RocketMQListener<MessageExt>, RocketMQPushConsumerLifecycleListener {
 
     @Override
     public void onMessage(MessageExt message) {
+        log.info("消费消息...");
         log.info("tags:{}; messageId:{}", message.getTags(), message.getMsgId());
         log.info("message: {}", new String(message.getBody()));
     }

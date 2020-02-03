@@ -16,3 +16,6 @@ POST http://localhost:1001/rocketmq/asyncSend/user/asyncSend
 POST http://localhost:1001/rocketmq/sendMessageInTransaction/user/sendMessageInTransaction
 
 ###
+POST http://localhost:1001/rocketmq/tag/user/test-tag
+
+###

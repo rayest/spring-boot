@@ -42,6 +42,15 @@ public class ProducerController {
         producerService.sendMessageInTransaction(username);
     }
 
+    @PostMapping("/rocketmq/syncSend/user/{username}")
+    public void syncSend(@PathVariable String username) throws Exception {
+        producerService.syncSend(username);
+    }
+
+    @PostMapping("/rocketmq/tag/user/{username}")
+    public void sendWihTag(@PathVariable String username) throws Exception {
+        producerService.sendWihTag(username);
+    }
 
 
 }

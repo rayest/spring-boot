@@ -35,7 +35,7 @@ public class TransactionListenerImpl implements RocketMQLocalTransactionListener
     public RocketMQLocalTransactionState checkLocalTransaction(Message message) {
         log.info("检查本地事务...");
         log.info("message:{}", message);
-        // Boolean result = xxxService.isSuccess(msg,arg);
+        // Boolean result = xxxService.isSuccess(msg,arg); 查询数据库进行业务判断
         Boolean result = true;
         if (result != null) {
             if (result) {
