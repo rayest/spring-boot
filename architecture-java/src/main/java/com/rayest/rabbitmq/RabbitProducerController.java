@@ -25,7 +25,7 @@ public class RabbitProducerController {
         correlationData.setId(UUID.randomUUID().toString());
         rabbitTemplate.setConfirmCallback(confirmCallback());
         rabbitTemplate.setReturnCallback(returnCallback());
-        rabbitTemplate.convertAndSend("arch-queue", "", username, correlationData);
+        rabbitTemplate.convertAndSend("", "arch-queue", username, correlationData);
     }
 
     private RabbitTemplate.ReturnCallback returnCallback() {
@@ -38,11 +38,11 @@ public class RabbitProducerController {
     }
 
     private RabbitTemplate.ConfirmCallback confirmCallback(){
-        return (correlationData, b, s) -> {
+        return (correlationData, ack, result) -> {
             log.info("投递成功....");
             log.info("correlationData id: {}", correlationData.getId());
-            log.info("b: {}", b);
-            log.info("String: {}", s);
+            log.info("ack: {}", ack);
+            log.info("result: {}", result);
         };
     }
 }
