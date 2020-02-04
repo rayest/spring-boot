@@ -1,7 +1,7 @@
 package com.rayest.mapper;
 
+import com.rayest.api.model.Order;
 import com.rayest.entity.OrderEntity;
-import com.rayest.model.Order;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -13,4 +13,5 @@ public interface OrderMapper {
 
     List<Order> toOrderList(List<OrderEntity> orderEntities);
 
+    Order toOrder(OrderEntity orderEntity);
 }

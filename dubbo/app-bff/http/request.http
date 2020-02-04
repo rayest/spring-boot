@@ -1,3 +1,6 @@
-GET localhost:8000/orders/1
+GET localhost:8000/order/11
+
+###
+GET localhost:8000/user/1
 
 ###

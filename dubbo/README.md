@@ -45,5 +45,10 @@
 >
 > 2. 访问：http://localhost:8081/actuator/health 
 
-> 
+6. 配置实用 LoadBalance
 
+> 1. 在 app-bff 中自定义实现 dubbo LoadBalance 的接口
+> 2. 根据 SPI 的规则，在 META-INF/dubbo 下配置具体实现为 demo
+> 3. 在实现中指定具体实现为 @Reference 为 demo
+> 4. 因为 demo 是负载均衡的配置，需要在 IDEA 中启动两个 provider 即 OrderService(修改端口号)
+> 5. 启动消费即可

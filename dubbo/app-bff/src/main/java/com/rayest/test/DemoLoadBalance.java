@@ -11,7 +11,7 @@ import java.util.List;
 public class DemoLoadBalance implements LoadBalance {
     @Override
     public <T> Invoker<T> select(List<Invoker<T>> invokers, URL url, Invocation invocation) throws RpcException {
-        System.out.println("DemoLoadBalance : Select the second invoker...");
-        return invokers.get(1);
+        System.out.println("DemoLoadBalance : Select the first invoker...");
+        return invokers.get(0);
     }
 }

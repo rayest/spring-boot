@@ -14,12 +14,12 @@ dubbo:
     address: 127.0.0.1:2181
   protocol:
     name: dubbo
-    port: 20882
+    port: 20881
   monitor:
     protocol: registry
 
 server:
-  port: 8003
+  port: 8002
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

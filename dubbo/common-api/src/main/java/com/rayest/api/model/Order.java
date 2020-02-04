@@ -1,4 +1,4 @@
-package com.rayest.model;
+package com.rayest.api.model;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

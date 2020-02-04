@@ -2,15 +2,11 @@ package com.rayest.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.rayest.model.Order;
+import com.rayest.api.model.Order;
 import com.rayest.service.OrderControllerService;
-import com.rayest.service.OrderService;
+import com.rayest.api.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Slf4j
 @Service
@@ -21,20 +17,13 @@ public class OrderControllerServiceImpl implements OrderControllerService {
     private OrderService orderService;
 
     @Override
+    @HystrixCommand(fallbackMethod = "getByOrderNoDefault")
     public Order getByOrderNo(String orderNo) {
-        return null;
+        return orderService.getByOrderNo(orderNo);
     }
 
-    @HystrixCommand(fallbackMethod = "getByUserNoDefault")
-    @Override
-    public List<Order> getByUserNo(String userNo) {
-        return orderService.getByUserNo(userNo);
-    }
-
-    public List<Order> getByUserNoDefault(String userNo){
-        log.info("order 服务不可用，返回空集合. userNo: {}", userNo);
-        List<Order> orders = new ArrayList<>();
-        orders.add(new Order().setId(-1).setUserNo("-1"));
-        return orders;
+    public Order getByOrderNoDefault(String orderNo){
+        log.info("order 服务不可用，返回默认集合. orderNo: {}", orderNo);
+        return new Order().setId(-1).setUserNo("-1").setOrderNo(orderNo);
     }
 }
