@@ -1,12 +1,8 @@
 dubbo:
-  application:
-    name: app-bff
-  registry:
-    protocol: zookeeper
-    address: 127.0.0.1:2181
   consumer:
     check: false # 启动时不检查。如果 provider 不存在时，启动时程序不报错
     timeout: 5000 # 全局接口调用超时时间，默认1秒优先级：方法级别 > 接口级别 > 全局级别。如果级别相同，消费方优先
     retries: 3 # 不包括第一次
+
 server:
   port: 8000

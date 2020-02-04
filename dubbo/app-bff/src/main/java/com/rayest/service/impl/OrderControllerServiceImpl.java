@@ -6,6 +6,7 @@ import com.rayest.model.Order;
 import com.rayest.service.OrderControllerService;
 import com.rayest.service.OrderService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -15,7 +16,8 @@ import java.util.List;
 @Service
 public class OrderControllerServiceImpl implements OrderControllerService {
 
-    @Reference(version = "1.0-SNAPSHOT", loadbalance = "roundrobin", actives = 10)
+//    @Reference(version = "1.0-SNAPSHOT", loadbalance = "roundrobin", actives = 10)
+    @Reference(loadbalance = "demo")
     private OrderService orderService;
 
     @Override
