@@ -1,6 +1,5 @@
-package mobi.rayson.mapper;
+package mobi.rayson.es.article;
 
-import mobi.rayson.model.domain.Article;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Repository;
 

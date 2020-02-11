@@ -1,4 +1,4 @@
-package mobi.rayson.model.domain;
+package mobi.rayson.es.article;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,0 +1,24 @@
+### es
+### 查看文章 by es client with 索引、type、docId
+GET localhost:9200/article/poet/1
+
+###
+GET localhost:9200/article/peot/_search?_source
+
+
+
+### web client API
+### 搜索文章 by id
+GET localhost:8888/article/id/1
+
+###
+POST localhost:8888/articles
+Content-Type: application/json
+
+{
+  "pageSize": 10,
+  "pageNumber": 1,
+  "type": 1
+}
+
+###

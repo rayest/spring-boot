@@ -1,4 +1,4 @@
-package mobi.rayson.model.dto;
+package mobi.rayson.es.article.dto;
 
 import lombok.Data;
 import lombok.ToString;
